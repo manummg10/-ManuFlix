@@ -1,6 +1,7 @@
 # 🎬 ManuFlix
 
 **ManuFlix** es un clon visual de Netflix creado utilizando únicamente **HTML**, **CSS** y **JavaScript vanilla**. Este proyecto fue desarrollado como un ejercicio personal de aprendizaje para practicar diseño responsivo, estructura de interfaces modernas, animaciones y manipulación del DOM sin frameworks.
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9f015eed-cf63-4dd8-bc4c-6d35a90ac49a/deploy-status)](https://app.netlify.com/projects/manuflix/deploys)
 
 ## 🌐 Demo en vivo
