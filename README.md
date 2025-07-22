@@ -47,4 +47,4 @@ Este proyecto fue creado como un desafío personal y no está pensado para produ
 
 ### ✨ Autor
 
-- **Manu Moraira** – | [GitHub]([https://github.com/tuusuario](https://github.com/manummg10))
+- **Manu Moraira** – [GitHub]([https://github.com/tuusuario](https://github.com/manummg10)
