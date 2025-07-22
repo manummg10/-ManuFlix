@@ -1,0 +1,316 @@
+html {
+  font-size: 62.5%;
+}
+
+
+body {
+  font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  flex-direction: column;
+  min-height: 100vh;
+
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 2px solid black;
+}
+
+.logo {
+  height: 40px;
+}
+
+.layout {
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+
+  padding: 60px 20px;
+
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+}
+
+.Logo__manuflix {
+  width: 14rem;
+  position: absolute;
+  top: 8rem;
+  left: 8rem;
+  margin: 0;
+  display: block;
+}
+
+.step-icon {
+  font-size: 32px;
+  color: red;
+  border: 2px solid red;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-text {
+  color: black;
+  margin: 10px 0;
+  text-align: center;
+  font-size: 20px;
+}
+
+.layout__main {
+  min-width: 90rem;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem;
+  flex: 1;
+}
+
+
+.main__title {
+  font-size: 2.2rem;
+  color: red;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.main__prices {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+
+.prices__price {
+  flex: 8%;
+  background-color: #F2F2F2;
+  border-radius: 1.5rem;
+  text-align: center;
+  margin: 1rem;
+
+}
+
+
+
+.price__card-header {
+  padding: 2rem;
+  border-radius: 1.5rem;
+  color: #fff;
+  text-align: left;
+}
+
+/* Degradado para cada tarjeta */
+.price__card-header--basico {
+  border-radius: 1rem;
+  background: linear-gradient(135deg, #20509E, #4B3686);
+}
+
+.price__card-header--estandar {
+  border-radius: 1rem;
+  background: linear-gradient(135deg, #742965, #AC1A3F);
+}
+
+.price__card-header--premium {
+  border-radius: 1rem;
+  background: linear-gradient(135deg, #20509E, #D10F22);
+}
+
+.prices__price:hover {
+  flex-basis: 10%;
+  background-color: #d6d6d6;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.price__subtitle1,
+.price__subtitle2,
+.price__subtitle3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.price__subtitle-detail {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  opacity: 0.9;
+}
+
+.price__number {
+  color: #4F5166;
+  font-size: 4.5rem;
+  margin-bottom: 2rem;
+  ;
+}
+
+.price__detail {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #777AA2;
+  padding: 1rem 0;
+  border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+
+}
+
+.price__btn {
+  width: 100%;
+  margin-top: 3rem;
+  border: 1px solid transparent;
+  outline: none;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  transition: all 300ms linear;
+}
+
+
+.price__btn:hover {
+  color: red;
+  background-color: black;
+  border: 1px solid white;
+}
+
+.footer {
+  display: block !important;
+  background-color: #222;
+  color: #fff;
+  padding: 2rem;
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+.footer p {
+  margin-bottom: 1rem;
+}
+
+/* ===============================
+   🎯 RESPONSIVE DESIGN
+   =============================== */
+
+/* 📱 Para móviles (hasta 768px) */
+@media (max-width: 768px) {
+  .layout {
+    padding: 40px 10px;
+    flex-direction: column;
+  }
+
+  .Logo__manuflix {
+    position: static;
+    width: 10rem;
+    margin: 0 auto 2rem auto;
+    display: block;
+  }
+
+  .layout__main {
+    min-width: auto;
+    padding: 0;
+  }
+
+  .main__prices {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .prices__price {
+    margin-right: 0;
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .price__number {
+    font-size: 3rem;
+  }
+
+  .price__btn {
+    font-size: 1.4rem;
+  }
+
+  .header {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 20px;
+  }
+
+  .logo {
+    height: 30px;
+  }
+}
+
+/* 💻 Para tablets (769px a 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .layout__main {
+    min-width: auto;
+    max-width: 90%;
+  }
+
+  .main__prices {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .prices__price {
+    margin-right: 0;
+    padding: 3rem;
+  }
+
+  .Logo__manuflix {
+    top: 4rem;
+    left: 2rem;
+    width: 12rem;
+  }
+}
+
+/* 🖥️ Para pantallas muy grandes (más de 1400px) */
+@media (min-width: 1025px) {
+  .layout__main {
+    max-width: 1400px;
+  }
+
+  .prices__price {
+    padding: 5rem;
+  }
+
+  .price__number {
+    font-size: 5rem;
+  }
+
+  .price__btn {
+    font-size: 1.6rem;
+  }
+}
+
+.construccion {
+  display: flex;
+  align-items: center;
+  /* Alinea verticalmente al centro */
+  justify-content: center;
+  /* Centra todo horizontalmente */
+  gap: 10px;
+  /* Espacio entre el texto y el logo */
+  font-family: sans-serif;
+  /* Fuente limpia (opcional) */
+  font-size: 16px;
+  /* Tamaño de letra (ajustable) */
+  padding: 20px;
+  /* Espaciado interno (opcional) */
+}
+
+.logo2 {
+  height: 24px;
+  /* Ajusta el tamaño del logo */
+}

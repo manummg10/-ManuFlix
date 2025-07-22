@@ -1,0 +1,224 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 2px solid black;
+}
+
+.logo {
+  height: 40px;
+}
+
+.main {
+  padding: 60px 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+  text-align: center;
+  padding: 4rem;
+}
+
+.icon-lock {
+  font-size: 32px;
+  color: red;
+  border: 2px solid red;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-text {
+  color: black;
+  margin: 10px 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 1.5rem;
+  color: black;
+}
+.subtitle{
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.bold-text {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.encryption {
+  font-size: 1rem;
+  color: black;
+  margin-bottom: 1rem;
+  text-align: right;
+  
+}
+
+.payment-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.option {
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  margin: 0 0 1rem;
+}
+
+.option:hover {
+  background-color: #f9f9f9;
+}
+
+.cards img,
+.option img {
+  height: 30px;
+  margin-left: 10px;
+}
+
+.btn-next {
+  background-color: red;
+  color: white;
+  border: white;
+  padding: 14px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.btn-next:hover {
+  background-color: black;
+  color: red;
+  border: 1px solid white;
+}
+
+/* Botón mejorado para dispositivos móviles también */
+.btn-next {
+  display: block;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 20px 100px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 2rem auto 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-next:hover {
+  background-color: black;
+  color: red;
+  border: 1px solid white;
+}
+
+
+
+.option input[type="radio"] {
+  /* Ocultar radio real pero accesible */
+  opacity: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+/* Crear la "bolita" personalizada */
+.option label {
+  position: relative;
+  padding-left: 35px; /* espacio para la bolita */
+  cursor: pointer;
+  user-select: none;
+  display: inline-block;
+  line-height: 20px;
+  color: #333;
+}
+
+/* El círculo externo */
+.option label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  background: white;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+/* El círculo interno (la bolita cuando está seleccionado) */
+.option input[type="radio"]:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background: black; /* color de la bolita */
+  border-radius: 60%;
+}
+
+/* Cambiar borde cuando está seleccionado */
+.option input[type="radio"]:checked + label::before {
+  border-color: black;
+}
+
+.construccion {
+  display: flex;
+  align-items: center;
+  /* Alinea verticalmente al centro */
+  justify-content: center;
+  /* Centra todo horizontalmente */
+  gap: 10px;
+  /* Espacio entre el texto y el logo */
+  font-family: sans-serif;
+  /* Fuente limpia (opcional) */
+  font-size: 16px;
+  /* Tamaño de letra (ajustable) */
+  padding: 20px;
+  /* Espaciado interno (opcional) */
+}
+
+.logo2 {
+  height: 24px;
+  /* Ajusta el tamaño del logo */
+}

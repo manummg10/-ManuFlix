@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./assets/css/reset.css" />
+	<link rel="stylesheet" href="./assets/css/normalize.css" />
+	<link rel="stylesheet" href="./assets/css/stylesManuFlix.css">
+	<link rel="icon" href="./assets/img/manuflix-logo-icon.png" type="image/png">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap"
+		rel="stylesheet">
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<title>ManuFLIXplan</title>
+</head>
+
+
+<body>
+	<header>
+		<div class="contenedor">
+			<!-- Logo -->
+			<img src="/assets/img/mANUFLIX ORIGINAL.png" alt="Netflix Logo" class="logo" />
+
+			<!-- Botón Hamburguesa -->
+			<button class="hamburguesa" aria-label="Abrir menú">
+				☰
+			</button>
+
+			<!-- Navegación -->
+			<nav class="menu-nav">
+				<a href="#" class="activo">Inicio</a>
+				<a href="#">Series</a>
+				<a href="#">Películas</a>
+				<a href="#">Más Recientes</a>
+				<a href="#">Mi Lista</a>
+			</nav>
+
+			<!-- Iconos a la derecha -->
+			<div class="iconos-header">
+				<img src="./assets/img/lupa.svg" class="lupa" alt="Lupa" />
+				<img src="./assets/img/campana.png" class="campana" alt="Campana" />
+				<a href="index.html">
+					<img src="./assets/img/user.jpg" class="usuario" alt="Usuario" />
+				</a>
+			</div>
+		</div>
+	</header>
+
+	<aside class="pelicula-principal">
+		<!-- Fondo de video -->
+		<video autoplay muted loop playsinline class="background-video">
+			<source src="./assets/img/background-video.mp4" type="video/mp4">
+			Tu navegador no soporta el video.
+		</video>
+
+		<!-- Overlay para oscurecer el fondo -->
+		<div class="overlay"></div>
+
+		<!-- Contenido principal -->
+		<div class="contenedor">
+			<h1 class="titulo">Jurassic Park</h1>
+			<p class="descripcion">
+				Un parque temático donde los dinosaurios vuelven a la vida, pero la aventura se descontrola cuando todo
+				se escapa de control.
+			</p>
+			<button role="button" class="boton"><i class="fas fa-play"></i>Reproducir</button>
+			<button role="button" class="boton"><i class="fas fa-info-circle"></i>Más información</button>
+		</div>
+	</aside>
+
+
+	<main class="peliculas-recomendadas contenedor">
+		<div class="contenedor-titulo-controles">
+			<h3>Películas Recomendadas</h3>
+			<div class="indicadores"></div>
+		</div>
+
+		<div class="contenedor-principal">
+			<button role="button" id="flecha-izquierda" class="flecha-izquierda"><i
+					class="fas fa-angle-left"></i></button>
+
+			<div class="contenedor-carousel">
+				<div class="carousel">
+
+
+					<div class="pelicula">
+						<a href="#">
+							<!-- Depredador -->
+							<img src="./assets/img/DEPREDADOR-1.webp" alt="Depredador" data-titulo="Depredador"
+								data-descripcion="Un comando de élite es enviado a la selva para rescatar a unos rehenes, pero se enfrenta a un cazador alienígena con tecnología avanzada que los acecha uno a uno."
+								data-imagen-src="./assets/img/predator_fondo.jpg" />
+						</a>
+					</div>
+
+					<div class="pelicula">
+						<a href="#">
+							<img src="./assets/img/Jurassic_Park_download.webp" alt="Jurassic_Park"
+								data-titulo="Jurassic Park"
+								data-descripcion="Un parque temático donde los dinosaurios vuelven a la vida, pero la aventura se descontrola cuando todo se escapa de control."
+								data-imagen-src="./assets/img/jp-1-1678922274073.jpg" />
+						</a>
+					</div>
+
+					<div class="pelicula">
+						<a href="#">
+							<img src="./assets/img/EL HOYO 2-2.webp" alt="El Hoyo 2" data-titulo="El Hoyo 2"
+								data-descripcion="Una nueva capa del experimento vertical revela horrores aún más profundos."
+								data-imagen-src="./assets/img/hoyo-2-fondo.webp" />
+						</a>
+					</div>
+
+					<div class="pelicula">
+						<a href="#">
+							<img src="./assets/img/VENON LIBERADO-3.webp" alt="Venom Liberado"
+								data-titulo="Venom Liberado"
+								data-descripcion="Venom debe unir fuerzas con un viejo enemigo para salvar el mundo de una amenaza simbiótica."
+								data-imagen-src="./assets/img/venon_fondo.webp" />
+						</a>
+					</div>
+
+					<div class="pelicula">
+						<a href="#">
+							<img src="./assets/img/PROBLEMAS...-4.webp" alt="Problemas" data-titulo="Problemas"
+								data-descripcion="Una pareja se ve envuelta en una serie de eventos desafortunados tras un malentendido."
+								data-imagen-src="./assets/img/PROBLEMAS...-4.webp" />
+						</a>
+					</div>
+
+					<div class="pelicula">
+						<a href="#">
+							<img src="./assets/img/RASCACIELOS-5.webp" alt="Rascacielos" data-titulo="Rascacielos"
+								data-descripcion="Un exagente debe salvar a su familia atrapada en el edificio más alto del mundo en llamas."
+								data-imagen-src="./assets/img/RASCACIELOS-5.webp" />
+						</a>
+					</div>
+
+					<div class="pelicula">
+						<a href="#">
+							<img src="./assets/img/MENDEZ-6.webp" alt="Méndez" data-titulo="Méndez"
+								data-descripcion="Un detective argentino se enfrenta al caso más complejo de su carrera."
+								data-imagen-src="./assets/img/MENDEZ-6.webp" />
+						</a>
+					</div>
+
+					<div class="pelicula">
+						<a href="#">
+							<img src="./assets/img/NULL-7.png" alt="NULL" data-titulo="NULL" data-descripcion="Sigue la historia de NULL, un brillante developer arrastrado a una misión inesperada cuando descubre
+				un portal digital que conecta realidades paralelas. Junto a un grupo de expertos, deberá enfrentar
+				los misterios de una inteligencia artificial que trasciende el tiempo y el espacio, desafiando los
+				límites de la tecnología y la comprensión humana." data-imagen-src="./assets/img/NULL-7.png" />
+						</a>
+					</div>
+
+					<div class="pelicula">
+						<a href="#">
+							<img src="./assets/img/INVASION INSURRECCION-8.webp" alt="Invasión Insurrección"
+								data-titulo="Invasión Insurrección"
+								data-descripcion="La humanidad se rebela contra sus invasores alienígenas en una lucha por la libertad."
+								data-imagen-src="./assets/img/INVASION INSURRECCION-8.webp" />
+						</a>
+					</div>
+
+					<div class="pelicula">
+						<a href="#">
+							<img src="./assets/img/AVENTURA MARRUECOS-9.webp" alt="Aventura Marruecos"
+								data-titulo="Aventura en Marruecos"
+								data-descripcion="Dos mochileros se pierden en el desierto y descubren una antigua ciudad oculta."
+								data-imagen-src="./assets/img/AVENTURA MARRUECOS-9.webp" />
+						</a>
+					</div>
+
+					<div class="pelicula">
+						<a href="#">
+							<img src="./assets/img/EL HOYO-10.webp" alt="El Hoyo" data-titulo="El Hoyo"
+								data-descripcion="Un sistema carcelario vertical pone a prueba la solidaridad humana."
+								data-imagen-src="./assets/img/EL HOYO-10.webp" />
+						</a>
+					</div>
+
+					<div class="pelicula">
+						<a href="#">
+							<img src="./assets/img/BIND-11.png" alt="Bind" data-titulo="Bind"
+								data-descripcion="Una familia se muda a una antigua casa donde los secretos del pasado resurgen."
+								data-imagen-src="./assets/img/BIND-11.png" />
+						</a>
+					</div>
+
+					<div class="pelicula">
+						<a href="#">
+							<img src="./assets/img/Batman.png" alt="Batman" data-titulo="Batman"
+								data-descripcion="El caballero oscuro se enfrenta a un nuevo villano que amenaza con destruir Ciudad Gótica."
+								data-imagen-src="./assets/img/6.png" />
+						</a>
+					</div>
+
+					<div class="pelicula">
+						<a href="#">
+							<img src="./assets/img/interstellar.webp" alt="Interstellar" data-titulo="Interstellar"
+								data-descripcion="Un grupo de exploradores viaja a través de un agujero de gusano para salvar a la humanidad."
+								data-imagen-src="./assets/img/1.1.jpg">
+						</a>
+					</div>
+
+					<button role="button" id="flecha-derecha" class="flecha-derecha"><i
+							class="fas fa-angle-right"></i></button>
+				</div>
+			</div>
+	</main>
+
+	<main class="peliculas-recomendadas contenedor">
+		<div class="contenedor-titulo-controles">
+			<h3>Películas de Estreno</h3>
+			<div class="indicadores"></div>
+		</div>
+
+		<div class="contenedor-principal">
+			<button role="button" id="flecha-izquierda-1" class="flecha-izquierda"><i
+					class="fas fa-angle-left"></i></button>
+
+			<div class="contenedor-carousel">
+				<div class="carousel">
+
+
+
+
+					<div class="pelicula">
+						<a href="#">
+							<img src="./assets/img/VENON LIBERADO-3.webp" alt="Venom Liberado"
+								data-titulo="Venom Liberado"
+								data-descripcion="Venom debe unir fuerzas con un viejo enemigo para salvar el mundo de una amenaza simbiótica."
+								data-imagen-src="./assets/img/fondo-venom.jpg" />
+						</a>
+					</div>
+
+					<div class="pelicula">
+						<a href="#">
+							<img src="./assets/img/PROBLEMAS...-4.webp" alt="Problemas" data-titulo="Problemas"
+								data-descripcion="Una pareja se ve envuelta en una serie de eventos desafortunados tras un malentendido."
+								data-imagen-src="./assets/img/fondo-problemas.jpg" />
+						</a>
+					</div>
+
+					<div class="pelicula">
+						<a href="#">
+							<img src="./assets/img/RASCACIELOS-5.webp" alt="Rascacielos" data-titulo="Rascacielos"
+								data-descripcion="Un exagente debe salvar a su familia atrapada en el edificio más alto del mundo en llamas."
+								data-imagen-src="./assets/img/fondo-rascacielos.jpg" />
+						</a>
+					</div>
+
+					<div class="pelicula">
+						<a href="#">
+							<img src="./assets/img/MENDEZ-6.webp" alt="Méndez" data-titulo="Méndez"
+								data-descripcion="Un detective argentino se enfrenta al caso más complejo de su carrera."
+								data-imagen-src="./assets/img/fondo-mendez.jpg" />
+						</a>
+					</div>
+
+					<div class="pelicula">
+						<a href="#">
+							<img src="./assets/img/NULL-7.png" alt="NULL" data-titulo="NULL" data-descripcion="Sigue la historia de NULL, un brillante developer arrastrado a una misión inesperada cuando descubre
+				un portal digital que conecta realidades paralelas. Junto a un grupo de expertos, deberá enfrentar
+				los misterios de una inteligencia artificial que trasciende el tiempo y el espacio, desafiando los
+				límites de la tecnología y la comprensión humana." data-imagen-src="./assets/img/fondo-null.jpg" />
+						</a>
+					</div>
+
+					<div class="pelicula">
+						<a href="#">
+							<img src="./assets/img/INVASION INSURRECCION-8.webp" alt="Invasión Insurrección"
+								data-titulo="Invasión Insurrección"
+								data-descripcion="La humanidad se rebela contra sus invasores alienígenas en una lucha por la libertad."
+								data-imagen-src="./assets/img/fondo-invasion.jpg" />
+						</a>
+					</div>
+
+					<div class="pelicula">
+						<a href="#">
+							<img src="./assets/img/AVENTURA MARRUECOS-9.webp" alt="Aventura Marruecos"
+								data-titulo="Aventura en Marruecos"
+								data-descripcion="Dos mochileros se pierden en el desierto y descubren una antigua ciudad oculta."
+								data-imagen-src="./assets/img/fondo-marruecos.jpg" />
+						</a>
+					</div>
+
+					<div class="pelicula">
+						<a href="#">
+							<img src="./assets/img/EL HOYO-10.webp" alt="El Hoyo" data-titulo="El Hoyo"
+								data-descripcion="Un sistema carcelario vertical pone a prueba la solidaridad humana."
+								data-imagen-src="./assets/img/fondo-el-hoyo.jpg" />
+						</a>
+					</div>
+
+					<div class="pelicula">
+						<a href="#">
+							<img src="./assets/img/BIND-11.png" alt="Bind" data-titulo="Bind"
+								data-descripcion="Una familia se muda a una antigua casa donde los secretos del pasado resurgen."
+								data-imagen-src="./assets/img/fondo-bind.jpg" />
+						</a>
+					</div>
+
+					<div class="pelicula">
+						<a href="#">
+							<img src="./assets/img/Batman.png" alt="Batman" data-titulo="Batman"
+								data-descripcion="El caballero oscuro se enfrenta a un nuevo villano que amenaza con destruir Ciudad Gótica."
+								data-imagen-src="./assets/img/fondo-batman.jpg" />
+						</a>
+					</div>
+
+					<div class="pelicula">
+						<a href="#">
+							<img src="./assets/img/interstellar.webp" alt="Interstellar" data-titulo="Interstellar"
+								data-descripcion="Un grupo de exploradores viaja a través de un agujero de gusano para salvar a la humanidad."
+								data-imagen-src="./assets/img/fondo-interstellar.jpg" />
+						</a>
+					</div>
+
+					<button role="button" id="flecha-derecha-2" class="flecha-derecha"><i
+							class="fas fa-angle-right"></i></button>
+				</div>
+			</div>
+	</main>
+
+	<main class="peliculas-recomendadas contenedor">
+		<div class="contenedor-titulo-controles">
+			<h3>Películas más vistas</h3>
+			<div class="indicadores"></div>
+		</div>
+
+		<div class="contenedor-principal">
+			<button role="button" id="flecha-izquierda-1" class="flecha-izquierda"><i
+					class="fas fa-angle-left"></i></button>
+
+			<div class="contenedor-carousel">
+				<div class="carousel">
+
+
+
+
+					<div class="pelicula">
+						<a href="#">
+							<img src="./assets/img/VENON LIBERADO-3.webp" alt="Venom Liberado"
+								data-titulo="Venom Liberado"
+								data-descripcion="Venom debe unir fuerzas con un viejo enemigo para salvar el mundo de una amenaza simbiótica."
+								data-imagen-src="./assets/img/fondo-venom.jpg" />
+						</a>
+					</div>
+
+					<div class="pelicula">
+						<a href="#">
+							<img src="./assets/img/PROBLEMAS...-4.webp" alt="Problemas" data-titulo="Problemas"
+								data-descripcion="Una pareja se ve envuelta en una serie de eventos desafortunados tras un malentendido."
+								data-imagen-src="./assets/img/fondo-problemas.jpg" />
+						</a>
+					</div>
+
+					<div class="pelicula">
+						<a href="#">
+							<img src="./assets/img/RASCACIELOS-5.webp" alt="Rascacielos" data-titulo="Rascacielos"
+								data-descripcion="Un exagente debe salvar a su familia atrapada en el edificio más alto del mundo en llamas."
+								data-imagen-src="./assets/img/fondo-rascacielos.jpg" />
+						</a>
+					</div>
+
+					<div class="pelicula">
+						<a href="#">
+							<img src="./assets/img/MENDEZ-6.webp" alt="Méndez" data-titulo="Méndez"
+								data-descripcion="Un detective argentino se enfrenta al caso más complejo de su carrera."
+								data-imagen-src="./assets/img/fondo-mendez.jpg" />
+						</a>
+					</div>
+
+					<div class="pelicula">
+						<a href="#">
+							<img src="./assets/img/NULL-7.png" alt="NULL" data-titulo="NULL" data-descripcion="Sigue la historia de NULL, un brillante developer arrastrado a una misión inesperada cuando descubre
+				un portal digital que conecta realidades paralelas. Junto a un grupo de expertos, deberá enfrentar
+				los misterios de una inteligencia artificial que trasciende el tiempo y el espacio, desafiando los
+				límites de la tecnología y la comprensión humana." data-imagen-src="./assets/img/fondo-null.jpg" />
+						</a>
+					</div>
+
+					<div class="pelicula">
+						<a href="#">
+							<img src="./assets/img/INVASION INSURRECCION-8.webp" alt="Invasión Insurrección"
+								data-titulo="Invasión Insurrección"
+								data-descripcion="La humanidad se rebela contra sus invasores alienígenas en una lucha por la libertad."
+								data-imagen-src="./assets/img/fondo-invasion.jpg" />
+						</a>
+					</div>
+
+					<div class="pelicula">
+						<a href="#">
+							<img src="./assets/img/AVENTURA MARRUECOS-9.webp" alt="Aventura Marruecos"
+								data-titulo="Aventura en Marruecos"
+								data-descripcion="Dos mochileros se pierden en el desierto y descubren una antigua ciudad oculta."
+								data-imagen-src="./assets/img/fondo-marruecos.jpg" />
+						</a>
+					</div>
+
+					<div class="pelicula">
+						<a href="#">
+							<img src="./assets/img/EL HOYO-10.webp" alt="El Hoyo" data-titulo="El Hoyo"
+								data-descripcion="Un sistema carcelario vertical pone a prueba la solidaridad humana."
+								data-imagen-src="./assets/img/fondo-el-hoyo.jpg" />
+						</a>
+					</div>
+
+					<div class="pelicula">
+						<a href="#">
+							<img src="./assets/img/BIND-11.png" alt="Bind" data-titulo="Bind"
+								data-descripcion="Una familia se muda a una antigua casa donde los secretos del pasado resurgen."
+								data-imagen-src="./assets/img/fondo-bind.jpg" />
+						</a>
+					</div>
+
+					<div class="pelicula">
+						<a href="#">
+							<img src="./assets/img/Batman.png" alt="Batman" data-titulo="Batman"
+								data-descripcion="El caballero oscuro se enfrenta a un nuevo villano que amenaza con destruir Ciudad Gótica."
+								data-imagen-src="./assets/img/fondo-batman.jpg" />
+						</a>
+					</div>
+
+					<div class="pelicula">
+						<a href="#">
+							<img src="./assets/img/interstellar.webp" alt="Interstellar" data-titulo="Interstellar"
+								data-descripcion="Un grupo de exploradores viaja a través de un agujero de gusano para salvar a la humanidad."
+								data-imagen-src="./assets/img/1.1.jpg" />
+						</a>
+					</div>
+
+					<button role="button" id="flecha-derecha-2" class="flecha-derecha"><i
+							class="fas fa-angle-right"></i></button>
+				</div>
+			</div>
+	</main>
+	<footer class="footer">
+		<div class="footer--contenedor">
+			<ul class="iconos">
+				<li>
+					<a href="https://www.instagram.com/aprendecomodev/" target="_blank" rel="noopener noreferrer">
+						<img src="./assets/img/instagram.svg" alt="Instagram">
+						Aprende como Dev
+					</a>
+				</li>
+				<li>
+					<a href="https://github.com/manummg10" target="_blank" rel="noopener noreferrer">
+						<img src="./assets/img/github.svg" alt="GitHub">
+						github.com/manummg10
+					</a>
+				</li>
+				<li>
+					<a href="https://www.linkedin.com/in/manumorairagarcia" target="_blank" rel="noopener noreferrer">
+						<img src="./assets/img/linkedin.svg" alt="LinkedIn">
+						linkedin.com/in/manumorairagarcia
+					</a>
+				</li>
+			</ul>
+			<div class="informacion">
+				<p>Preguntas frecuentes</p>
+				<p>Prensa</p>
+				<p>Formas de ver</p>
+				<p>Preferencias de cookies</p>
+				<p>Pruebas de velocidad</p>
+				<p>Centro de ayuda</p>
+				<p>Relaciones con inversionistas</p>
+				<p>Terminos de uso</p>
+				<p>Informacion corporativa</p>
+				<p>Cuenta</p>
+				<p>Empleo</p>
+				<p>Privacidad</p>
+				<p>Contactanos</p>
+				<p>Solo en Manuflix</p>
+			</div>
+			<p class="idioma">🌐 Español</< /p>
+			<p class="construccion">
+				&copy; Manu Moraira 2025 -
+				<img src="./assets/img/LOGO.png" class="logo2" alt="Manu Moraira Logo">
+			</p>
+
+		</div>
+	</footer>
+
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="./assets/js/main.js"></script>
+	<script src="./assets/js/peliculas.js"></script>
+</body>
+
+</html>
